@@ -202,60 +202,6 @@ mark .md-meta { color: rgb(0, 0, 0); }
 mjx-container { break-inside: avoid; }
 
 
-/* for resume  <-- */
-#write {
-    padding-top: 0px !important;
-    padding-bottom: 20px !important;
-}
-
-content {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-}
-
-a {
-    color: #000;
-}
-
-h1,
-h2 {
-    border-bottom: 1px solid #eee !important;
-    margin-bottom: 3px !important;
-    padding-bottom: 3px !important;
-}
-
-h2 img {
-    width: 16px !important;
-}
-
-h2 {
-    font-size: 17px !important;
-}
-
-p {
-    margin-bottom: 2px !important;
-    margin-top: 2px !important;
-}
-
-ul {
-    margin-top: 2px !important;
-    margin-bottom: 2px !important;
-}
-
-li p {
-    margin-bottom: 0px !important;
-}
-
-li.md-list-item {
-    line-height: 20px !important;
-}
-
-a {
-    color: #555 !important;
-}
-
-/* for resume --> */
-
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
@@ -263,32 +209,48 @@ a {
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-html {
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
 
 #write {
     max-width: 860px;
-    margin: 0 auto;
-    padding: 30px;
+  	margin: 0 auto;
+  	padding: 30px;
     padding-bottom: 100px;
 }
 
-#write>ul:first-child,
-#write>ol:first-child {
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
     margin-top: 30px;
 }
 
 a {
     color: #4183C4;
 }
-
 h1,
 h2,
 h3,
@@ -302,7 +264,6 @@ h6 {
     line-height: 1.4;
     cursor: text;
 }
-
 h1:hover a.anchor,
 h2:hover a.anchor,
 h3:hover a.anchor,
@@ -311,83 +272,84 @@ h5:hover a.anchor,
 h6:hover a.anchor {
     text-decoration: none;
 }
-
 h1 tt,
 h1 code {
     font-size: inherit;
 }
-
 h2 tt,
 h2 code {
     font-size: inherit;
 }
-
 h3 tt,
 h3 code {
     font-size: inherit;
 }
-
 h4 tt,
 h4 code {
     font-size: inherit;
 }
-
 h5 tt,
 h5 code {
     font-size: inherit;
 }
-
 h6 tt,
 h6 code {
     font-size: inherit;
 }
-
 h1 {
-    padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
-
 h2 {
-    padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
 
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
 }
-
 h4 {
     font-size: 1.25em;
 }
-
 h5 {
     font-size: 1em;
 }
-
 h6 {
-    font-size: 1em;
+   font-size: 1em;
     color: #777;
 }
-
 p,
 blockquote,
 ul,
 ol,
 dl,
-table {
+table{
     margin: 0.8em 0;
 }
-
 li>ol,
 li>ul {
     margin: 0 0;
 }
-
 hr {
     height: 2px;
     padding: 0;
@@ -401,71 +363,57 @@ hr {
 li p.first {
     display: inline-block;
 }
-
 ul,
 ol {
     padding-left: 30px;
 }
-
 ul:first-child,
 ol:first-child {
     margin-top: 0;
 }
-
 ul:last-child,
 ol:last-child {
     margin-bottom: 0;
 }
-
 blockquote {
     border-left: 4px solid #dfe2e5;
     padding: 0 15px;
     color: #777777;
 }
-
 blockquote blockquote {
     padding-right: 0;
 }
-
 table {
     padding: 0;
     word-break: initial;
 }
-
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
-
 table tr:nth-child(2n),
 thead {
     background-color: #f8f8f8;
 }
-
-table tr th {
+table th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
-    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
-
-table tr td {
+table td {
     border: 1px solid #dfe2e5;
-    text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
-
-table tr th:first-child,
-table tr td:first-child {
+table th:first-child,
+table td:first-child {
     margin-top: 0;
 }
-
-table tr th:last-child,
-table tr td:last-child {
+table th:last-child,
+table td:last-child {
     margin-bottom: 0;
 }
 
@@ -474,7 +422,7 @@ table tr td:last-child {
 }
 
 .code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .3);
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
     border-top: 1px solid #eef2f2;
 }
 
@@ -502,31 +450,25 @@ code {
 }
 
 
-.md-task-list-item>input {
-    margin-left: -1.3em;
+.md-task-list-item > input {
+  margin-left: -1.3em;
 }
 
 @media print {
     html {
         font-size: 13px;
     }
-
-    table,
     pre {
         page-break-inside: avoid;
-    }
-
-    pre {
         word-wrap: break-word;
     }
 }
 
 .md-fences {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 }
-
 #write pre.md-meta-block {
-    padding: 1rem;
+	padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
@@ -537,33 +479,29 @@ code {
 }
 
 .mathjax-block>.code-tooltip {
-    bottom: .375rem;
+	bottom: .375rem;
 }
 
 .md-mathjax-midline {
     background: #fafafa;
 }
 
-#write>h3.md-focus:before {
-    left: -1.5625rem;
-    top: .375rem;
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
 }
-
-#write>h4.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
 }
-
-#write>h5.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
 }
-
-#write>h6.md-focus:before {
-    left: -1.5625rem;
-    top: .285714286rem;
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
 }
-
 .md-image>.md-meta {
     /*border: 1px solid #ddd;*/
     border-radius: 3px;
@@ -577,9 +515,9 @@ code {
     opacity: 1;
 }
 
-.md-toc {
-    margin-top: 20px;
-    padding-bottom: 20px;
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
 }
 
 .sidebar-tabs {
@@ -603,15 +541,12 @@ code {
     border-left-color: rgba(85, 85, 85, 0.12);
 }
 
-header,
-.context-menu,
-.megamenu-content,
-footer {
+header, .context-menu, .megamenu-content, footer{
     font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 .file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state {
+.file-node-content:hover .file-node-open-state{
     visibility: visible;
 }
 
@@ -624,9 +559,9 @@ footer {
     color: #b4654d;
 }
 
-.html-for-mac .context-menu {
+/*.html-for-mac {
     --item-hover-bg-color: #E6F0FE;
-}
+}*/
 
 #md-notification .btn {
     border: 0;
@@ -634,14 +569,32 @@ footer {
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+    opacity: 0.4;
 }
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
 
 
 </style><title>resume_yzh</title>
 </head>
 <body class='typora-export os-windows'><div class='typora-export-content'>
-<div id='write'  class=''><p>&nbsp;</p> <center>
-     <h1>叶子豪</h1>
+<div id='write'  class=''> <center>
+          <span position:absolute=""><img src=".\assets\selfie.jpg" style="zoom:10%;float:right;"></span>
+     <font size="15" style="float:mid"><b>叶子豪</b></font>
+     <hr>
      <div>
          <span>
              <img src="assets/phone-solid.svg" width="18px">
@@ -663,6 +616,6 @@ footer {
              <a href="https://yzhzy12321.github.io/yzh.github.io/">My Blog</a>
          </span>
      </div>
- </center><p>&nbsp;</p><h2 id='教育经历'><img src="assets/graduation-cap-solid.svg" width="30px"><span> 教育经历</span></h2><ul><li><p><span>上海立信会计金融学院      本科(在读)      专业：计算机科学与技术       </span><span style="float:right"><span>时间：2020.09-至今</span></span></p><ul><li><span>GPA:3.48/4.00，专业前20%</span></li><li><span>班级职务：团支书</span></li><li><span>荣誉：校优秀学生，奖学金，立信团委红色情景音乐剧三等奖</span></li></ul></li></ul><h2 id='项目经历'><img src="assets/project-diagram-solid.svg" width="30px"><span> 项目经历</span></h2><ul><li><p><strong><span>网易云音乐榜单排名数据分析</span></strong><span>        </span><span style="float:right"><span>项目地址：</span><a href='https://github.com/yzhzy12321/data_visualization'><span>github.com/yzhzy12321/data_visualization</span></a><span>👀</span></span></p><p><span>关键词：</span><u><em><span>python 网络爬虫 数据可视化</span></em></u></p><p><span>描述： 基于python语言使用</span><strong><span>requests beautifulsoup</span></strong><span>对网易云音乐热门榜单进行数据爬取，并以csv文件保存数据。使用</span><strong><span>numpy pandas</span></strong><span>对数据读取，并进行简单分析。最后将数据可视化展示。</span></p></li><li><p><strong><span>GitHub在线简历部署</span></strong><span>     </span><span style="float:right"><a href='resume.yezihao.asia'><span>https://resume.yezihao.asia</span></a><span>👍</span></span></p><p><span>描述： 使用markdown对简历进行编写制作，并部署在GitHub Pages上。</span></p><p>&nbsp;</p></li></ul><h2 id='实习经历'><img src="assets/briefcase-solid.svg" width="30px"><span> 实习经历</span></h2><h5 id='福建锐捷网络股份有限公司------计划与制造管理部实习生-----\n时间202203-202210'><span>福建锐捷网络股份有限公司      </span><u><span>计划与制造管理部</span></u><span>实习生     </span><span style="float:right"><span>时间：2022.03-2022.10</span></span></h5><ul><li><p><span>所在组织：数据管理组</span></p></li><li><p><span>实习描述：负责</span><u><span>对接部门各个小组的需求</span></u><span>，制作对应脚本后</span><strong><span>部署在服务器</span></strong><span>，</span><strong><span>优化数据库查表速度</span></strong><span>，</span><em><span>参与</span></em><span>公司熄灯工厂建设研讨会。</span></p></li><li><p><span>工作内容：</span></p><ol start='' ><li><span>使用</span><strong><span>VisualBasic</span></strong><span> 对其他部门的文档进行批量格式化排版</span></li><li><span>使用</span><strong><span>python</span></strong><span>读取</span><u><span>制造部数据库和管理组数据库，匹配对应数据库日志</span></u><span>，并将数据进行分析对比，以</span><strong><span>邮件形式</span></strong><span>将结果反馈给对应的部门负责人。</span></li><li><span>学习</span><strong><span>Spring Mybatis Maven</span></strong><span>等Webapp框架的使用和应用</span></li></ol><p>&nbsp;</p></li></ul><h2 id='校园经历'><img src="assets/rss-solid.svg" width="30px"><span> 校园经历 </span></h2><h5 id='校红十字会----------\n时间202009-202206'><span>校红十字会          </span><span style="float:right"><span>时间：2020.09-2022.06</span></span></h5><ul><li><span>所在部门：外联部部门助理</span></li><li><span>工作内容：部门负责对接校医务室及各学院二级红十字会部门，同时根据志愿情况组织部门内成员参加活动。</span></li></ul><h5 id='信息管理学院新生导生--------\n时间202109-202206'><span>信息管理学院新生导生        </span><span style="float:right"><span>时间：2021.09-2022.06</span></span></h5><ul><li><span>负责班级：21级计算机科学与技术1班</span></li><li><span>工作内容： 负责协助辅导员完成班级内基本工作，协助新生适应大学生活，解答疑问</span></li></ul><h5 id='大学生创新创业比赛'><span>大学生创新创业比赛 </span></h5><h3 id='技能证书'><span>技能证书：</span></h3><hr /><ul><li><span>CET4/CET6  较好的英语听说读写能力</span></li></ul><h3 id='自我评价'><span>自我评价：</span></h3><hr /><ul><li><span>具备优秀的XXX技能</span></li><li><span>具备较强的团队协作能力</span></li><li><span>具备较强的学习能力</span></li><li><span>具备较好的英语听说读写能力</span></li></ul></div></div>
+ </center><h4 id='教育经历'><img src="assets/graduation-cap-solid.svg" width="30px"><span> 教育经历</span></h4><hr /><ul><li><p><span>上海立信会计金融学院         专业：计算机科学与技术 </span><span style="float:right"><span>时间：2020.09-至今</span></span></p><ul><li><span>GPA:</span><strong><span>3.48/4.00</span></strong><span>，专业前</span><strong><span>20%</span></strong></li><li><span>班级职务：团支书</span></li><li><span>荣誉：校优秀学生，奖学金，立信团委红色情景音乐剧三等奖</span></li></ul></li></ul><h4 id='项目经历'><img src="assets/project-diagram-solid.svg" width="30px" ><span> 项目经历</span></h4><hr /><ul><li><p><strong><span>网易云音乐榜单排名数据分析</span></strong><span>        </span><span style="float:right"><span>项目地址：</span><a href='https://github.com/yzhzy12321/data_visualization'><span>github.com/yzhzy12321/data_visualization</span></a><span>👀</span></span></p><p><span>关键词：</span><u><em><span>python 网络爬虫 数据可视化</span></em></u></p><p><span>描述： 基于python语言使用</span><strong><span>requests beautifulsoup</span></strong><span>对网易云音乐热门榜单进行数据爬取，并以csv文件保存数据。使用</span><strong><span>numpy pandas</span></strong><span>对数据读取，并进行简单分析。最后将数据可视化展示。</span></p></li><li><p><strong><span>GitHub在线简历部署</span></strong><span>     </span><span style="float:right"><a href='resume.yezihao.asia'><span>https://resume.yezihao.asia</span></a><span>👍</span></span></p><p><span>描述： 使用markdown对简历进行编写制作，并部署在GitHub Pages上。</span></p></li></ul><h4 id='实习经历'><img src="assets/briefcase-solid.svg" width="30px"><span> 实习经历</span></h4><hr /><h5 id='福建锐捷网络股份有限公司------计划与制造管理部-数据管理组实习生-----\n时间202203-202210'><span>福建锐捷网络股份有限公司      </span><u><span>计划与制造管理部 数据管理组</span></u><span>实习生     </span><span style="float:right"><span>时间：2022.03-2022.10</span></span></h5><ul><li><p><span>实习描述：负责</span><u><span>对接部门各个小组的需求</span></u><span>，制作对应脚本后</span><strong><span>部署在服务器</span></strong><span>，</span><strong><span>优化数据库查表速度</span></strong><span>，</span><em><span>参与</span></em><span>公司熄灯工厂建设研讨会。</span></p></li><li><p><span>工作内容：</span></p><ol start='' ><li><span>使用</span><strong><span>VisualBasic</span></strong><span> 对其他部门的文档进行批量格式化排版</span></li><li><span>使用</span><strong><span>python</span></strong><span>读取</span><u><span>制造部数据库和管理组数据库，匹配对应数据库日志</span></u><span>，并将数据进行分析对比，以</span><strong><span>邮件形式</span></strong><span>将结果反馈给对应的部门负责人。</span></li><li><span>学习</span><strong><span>Spring Mybatis Maven</span></strong><span>等Webapp框架的使用和应用</span></li></ol></li></ul><h4 id='校园经历'><img src="assets/rss-solid.svg" width="30px"><span> 校园经历 </span></h4><hr /><h5 id='校红十字会----------\n时间202009-202206'><span>校红十字会          </span><span style="float:right"><span>时间：2020.09-2022.06</span></span></h5><ul><li><span>所在部门：外联部部门助理</span></li><li><span>工作内容：部门负责对接校医务室及各学院二级红十字会部门，同时根据志愿情况组织部门内成员参加活动。</span></li></ul><h5 id='信息管理学院新生导生--------\n时间202109-202206'><span>信息管理学院新生导生        </span><span style="float:right"><span>时间：2021.09-2022.06</span></span></h5><ul><li><span>负责班级：21级计算机科学与技术1班</span></li><li><span>工作内容： 负责协助辅导员完成班级内基本工作，协助新生适应大学生活，解答疑问</span></li></ul><h5 id='学科竞赛和社会实践'><span>学科竞赛和社会实践 </span></h5><ol start='' ><li><p><span>2022年“知行杯”上海市大学生社会实践大赛——《中国农村金融市场风险与可持续发展研究》</span><span style="float:right"><span>时间：2022年6月-2023年3月</span></span></p><ul><li><strong><span>获奖：上海市一等奖</span></strong></li></ul></li><li><p><span>论文：叶子豪,张晓娇,许广林. 《动态网站技术》课程教学改革的研究[J]. 课程教育研究,2021(34):26-27. </span></p></li><li><p><span>大学生创新训练项目</span></p></li></ol><ul><li><strong><span>国家级</span></strong><span>：基于随机动力演化的政策效用量化研究——以上海市科创激励政策为例</span></li></ul><ol start='4' ><li><span>上海市2022年进口博物展览会志愿者 </span><span style="float:right"><span>时间：2022年11月</span></span></li></ol><h2 id='技能证书'><span>技能证书 </span></h2><ul><li><span>CET4/CET6  较好的英语听说读写能力</span></li></ul><h3 id='自我评价'><span>自我评价：</span></h3><hr /><ul><li><span>具备优秀的XXX技能</span></li><li><span>具备较强的团队协作能力</span></li><li><span>具备较强的学习能力</span></li><li><span>具备较好的英语听说读写能力</span></li></ul></div></div>
 </body>
 </html>
