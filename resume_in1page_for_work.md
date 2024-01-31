@@ -9,27 +9,6 @@ GPA:**3.49/4.00**，前**15%**  <span style="float:right">政治面貌：中共�
 电话：13850136319<span style="float:right">邮箱：zihao_ye@qq.com </span>
 <span style="float:right"><img src="assets/github-brands.svg" width="20px">github：[yzhzy12321](https://github.com/yzhzy12321)</span>
 
-
-#### <img src="assets/project-diagram-solid.svg" width="15px"> 项目经历
-
----
-
-- **网易云音乐榜单排名数据分析**        <span style="float:right">项目地址：[github.com/yzhzy12321/data_visualization](https://github.com/yzhzy12321/data_visualization)</span>
-
-  描述： 基于python语言使用**requests beautifulsoup**对网易云音乐热门榜单进行数据爬取，并以csv文件保存数据。使用**numpy pandas**对数据读取，并进行简单分析。最后将数据可视化展示。
-
-
-#### <img src="assets/briefcase-solid.svg" width="15px"> 实习经历
-
----
-
-
-##### 福建锐捷网络股份有限公司      <u>计划与制造管理部 数据管理组</u>  实习生     <span style="float:right">时间：2022.03-2022.10</span>
-
-
-- 工作内容：参与生产环境的维护
-
-
 #### <img src="assets/rss-solid.svg" width="15px"> 校园经历 
 
 ---
@@ -53,6 +32,26 @@ GPA:**3.49/4.00**，前**15%**  <span style="float:right">政治面貌：中共�
 3. 大学生创新训练项目：（国家级）基于随机动力演化的政策效用量化研究  <span style="float:right">时间：2023年4月28日</span>
    - 工作：负责收集、整理和清洗与上海市科创激励政策相关的数据，**使用统计和机器学习技术建立政策效用量化模型**
 5. 通过CET4(503)/**CET6(488)**  有较好的英语听说读写能力<span style="float:right">时间：2021年6月/9月</span>
+
+#### <img src="assets/project-diagram-solid.svg" width="15px"> 项目经历
+
+---
+
+- **网易云音乐榜单排名数据分析**        <span style="float:right">项目地址：[github.com/yzhzy12321/data_visualization](https://github.com/yzhzy12321/data_visualization)</span>
+
+  描述： 基于python语言使用**requests beautifulsoup**对网易云音乐热门榜单进行数据爬取，并以csv文件保存数据。使用**numpy pandas**对数据读取，并进行简单分析。最后将数据可视化展示。
+
+
+#### <img src="assets/briefcase-solid.svg" width="15px"> 实习经历
+
+---
+
+
+##### 福建锐捷网络股份有限公司      <u>计划与制造管理部 数据管理组</u>  实习生     <span style="float:right">时间：2022.03-2022.10</span>
+
+
+- 工作内容：参与生产环境的维护
+
 
 #####<img src="assets/info-circle-solid.svg" width="15px"> 自我评价：
 
