@@ -1,11 +1,11 @@
 <center><font Size=5 style="margin-top:10px;">个人简历</font></center>
-#### <img src="assets/graduation-cap-solid.svg" width="15px"> 个人信息
 
+#### <img src="assets/graduation-cap-solid.svg" width="15px"> 个人信息
 ---
 
 <span style="float:right"><img src="assets/selfie1.jpg" style="zoom:4%;float=right;"  /></span>姓名:叶子豪<span style="float:right">性别：男</span> 
 就读学校：上海立信会计金融学院    <span style="float:right">专业：计算机科学与技术</span> 
-GPA:**3.49/4.00**，前**15%**  <span style="float:right">政治面貌：中共预备党员</span>
+GPA:**3.4/4.00**，均分**85.96**  <span style="float:right">政治面貌：中共党员</span>
 电话：13850136319<span style="float:right">邮箱：zihao_ye@qq.com </span>
 <span style="float:right"><img src="assets/github-brands.svg" width="20px">github：[yzhzy12321](https://github.com/yzhzy12321)</span>
 
@@ -25,6 +25,12 @@ GPA:**3.49/4.00**，前**15%**  <span style="float:right">政治面貌：中共�
 
 
 ##### 福建锐捷网络股份有限公司      <u>计划与制造管理部 数据管理组</u>  实习生     <span style="float:right">时间：2022.03-2022.10</span>
+
+
+- 工作内容：参与生产环境的维护
+
+
+##### 数研院(福建)信息产业有限责任公司      <u>市场商务部 研发中心</u>  实习生     <span style="float:right">时间：2024.4-至今</span>
 
 
 - 工作内容：参与生产环境的维护
@@ -54,9 +60,10 @@ GPA:**3.49/4.00**，前**15%**  <span style="float:right">政治面貌：中共�
    - 工作：负责收集、整理和清洗与上海市科创激励政策相关的数据，**使用统计和机器学习技术建立政策效用量化模型**
    - 成果：软件著作权
 4. 上海市2022年进口博物展览会志愿者 <span style="float:right">时间：2022年11月</span>
-5. 通过CET4(503)/**CET6(488)**  有较好的英语听说读写能力<span style="float:right">时间：2021年6月/9月</span>
+5. 通过**CET6(488)/IELT6.5(7.5 6.5 6.5 5.5)**  有较好的英语听说读写能力<span style="float:right">时间：2021年/2024年 6月</span>
 
-#####<img src="assets/info-circle-solid.svg" width="15px"> 自我评价：
+
+##### <img src="assets/info-circle-solid.svg" width="15px"> 自我评价：
 
 ***
 
